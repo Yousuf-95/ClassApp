@@ -1,0 +1,118 @@
+.dashboardSection {
+  width: 100vw;
+}
+.dashboardSection .container {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  margin: auto;
+  max-width: 80vw;
+  height: 100%;
+  /* align-items: center; */
+  /* overflow: auto; */
+  /* padding: 0 20px; */
+}
+.dashboardSection .container .welcomeText {
+  margin: 1.5rem 0;
+  text-align: center;
+  color: #334155;
+}
+.dashboardSection .container .flexContainer {
+  display: flex;
+  /* flex: 1; */
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.dashboardSection .container .flexContainer .box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  color: #334155;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+}
+.dashboardSection .container .flexContainer .box .userDetails {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.dashboardSection .container .flexContainer .box .classDetails {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 99%;
+  overflow: auto;
+  height: 50vh;
+}
+.dashboardSection .container .flexContainer .box .classDetails::-webkit-scrollbar {
+  width: 10px;
+}
+.dashboardSection .container .flexContainer .box .classDetails::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+.dashboardSection .container .flexContainer .box .classDetails::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+.dashboardSection .container .flexContainer .box .classDetails::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+.dashboardSection .container .flexContainer .box .classDetails .listHeading {
+  text-align: center;
+  margin: 0.5rem;
+}
+.dashboardSection .container .flexContainer .box .classDetails .classList {
+  border-collapse: collapse;
+  width: 100%;
+}
+.dashboardSection .container .flexContainer .box .classDetails .classList thead tr {
+  background-color: #334155;
+  color: #fff;
+  text-align: left;
+}
+.dashboardSection .container .flexContainer .box .classDetails .classList th, .dashboardSection .container .flexContainer .box .classDetails .classList td {
+  padding: 0.5rem;
+}
+.dashboardSection .container .flexContainer .box .classDetails .classList tbody tr {
+  border-bottom: 1px solid #334155;
+}
+.dashboardSection .container .flexContainer .box .classDetails .classList tbody tr:nth-of-type(even) {
+  background-color: #44566e57;
+}
+
+.userIcon > svg {
+  size: 5rem;
+  width: 10rem;
+  height: 10rem;
+  color: #999;
+  margin-top: 2rem;
+  align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboardSection .container {
+    max-width: 95vw;
+  }
+  .dashboardSection .container .flexContainer {
+    display: block;
+  }
+  .dashboardSection .container .flexContainer .box {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  .dashboardSection .container .flexContainer .box .classDetails {
+    display: block;
+    align-self: flex-start;
+    height: auto;
+  }
+  .dashboardSection .container .flexContainer .box .classDetails .listHeading {
+    text-align: center;
+    margin: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=dashboard.module.css.map */

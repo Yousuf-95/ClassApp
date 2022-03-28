@@ -1,0 +1,135 @@
+.box {
+  display: flex;
+  margin: 0 0 0.2rem 0;
+  z-index: 10;
+  width: 55%;
+  min-height: 50vh;
+}
+.box .userDetails {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.box .loginForm {
+  color: #334155;
+  width: 75%;
+  margin: 0 auto;
+  text-align: left;
+}
+.box .loginForm h2 {
+  font-size: 1.75rem;
+  margin: 0 0 1.5rem 0;
+  border-bottom: 2px solid #334155;
+}
+.box .loginForm .formGroup {
+  margin: 1rem auto;
+}
+.box .loginForm .formGroup label {
+  font-size: 1.15rem;
+  display: block;
+  margin: 0 auto 0.7rem auto;
+  /* border-radius: 0.25rem; */
+}
+.box .loginForm .formGroup .userIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.box .loginForm .formGroup .userIcon span {
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box .loginForm .formGroup input {
+  display: block;
+  width: 100%;
+  padding: 0.55rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  border: 1px inset transparent;
+}
+.box .loginForm .formGroup input:focus {
+  outline: none;
+  border-color: #334155;
+  /* border: 1px #334155 solid; */
+}
+.box .classDetails {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-width: 99%;
+  overflow: auto;
+}
+.box .classDetails::-webkit-scrollbar {
+  width: 10px;
+}
+.box .classDetails::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+.box .classDetails::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+.box .classDetails::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+.box .classDetails .listHeading {
+  text-align: center;
+  margin: 0.5rem;
+  color: #334155;
+}
+.box .classDetails .classList {
+  border-collapse: collapse;
+  width: 100%;
+}
+.box .classDetails .classList thead tr {
+  background-color: #334155;
+  color: #fff;
+  text-align: left;
+}
+.box .classDetails .classList th, .box .classDetails .classList td {
+  padding: 0.5rem;
+}
+.box .classDetails .classList tbody tr {
+  border-bottom: 1px solid #334155;
+}
+.box .classDetails .classList tbody tr:nth-of-type(even) {
+  background-color: #44566e57;
+}
+
+.btn {
+  color: #fff;
+  background: #334155;
+  padding: 0.75rem 1.25rem;
+  margin-top: 1.75rem;
+  border-radius: 0.25rem;
+  font-size: 1.15rem;
+  transition: background-color 200ms ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #475569;
+}
+.btn .arrowKey {
+  width: 2rem;
+  margin: 0 0 -0.2rem 0.2rem;
+}
+
+.userIcon > svg {
+  size: 5rem;
+  width: 10rem;
+  height: 10rem;
+  color: #999;
+  margin-top: 2rem;
+  align-self: center;
+}
+
+/*# sourceMappingURL=teacherComponent.module.css.map */

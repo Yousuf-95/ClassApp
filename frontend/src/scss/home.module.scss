@@ -1,0 +1,60 @@
+.container {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    margin: auto;
+    max-width: 80vw;
+    height: 100%;
+    /* align-items: center; */
+    /* overflow: auto; */
+    /* padding: 0 20px; */
+}
+
+.mySvg {
+    position: absolute;
+    // top: 70px;
+    // left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 150px;
+    }
+
+    .shapeFill {
+        /* fill: #f1f5f9; */
+        fill: #334155;
+    }
+}
+
+.showcase {
+    background: #e2e8f0;
+    width: 100vw;
+    height: calc(100vh - 70px);
+}
+
+
+.showcaseContent {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+
+    h1 {
+        color: #334155;
+        font-size: 3rem;
+        font-weight: 500;
+        margin: -8rem 0 0.5rem 0;
+    }
+
+    p{
+        text-align: center;
+    }
+}

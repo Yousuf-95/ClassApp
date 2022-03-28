@@ -1,0 +1,70 @@
+.box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  color: #334155;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+}
+.box .userDetails {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.box .classDetails {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 99%;
+  overflow: auto;
+  height: 50vh;
+}
+.box .classDetails::-webkit-scrollbar {
+  width: 10px;
+}
+.box .classDetails::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+.box .classDetails::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 10px;
+}
+.box .classDetails::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+.box .classDetails .listHeading {
+  text-align: center;
+  margin: 0.5rem;
+}
+.box .classDetails .classList {
+  border-collapse: collapse;
+  width: 100%;
+}
+.box .classDetails .classList thead tr {
+  background-color: #334155;
+  color: #fff;
+  text-align: left;
+}
+.box .classDetails .classList th, .box .classDetails .classList td {
+  padding: 0.5rem;
+}
+.box .classDetails .classList tbody tr {
+  border-bottom: 1px solid #334155;
+}
+.box .classDetails .classList tbody tr:nth-of-type(even) {
+  background-color: #44566e57;
+}
+
+.userIcon > svg {
+  size: 5rem;
+  width: 10rem;
+  height: 10rem;
+  color: #999;
+  margin-top: 2rem;
+  align-self: center;
+}
+
+/*# sourceMappingURL=studentComponent.module.css.map */

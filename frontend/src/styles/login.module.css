@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  margin: 0 auto;
+  max-width: 80vw;
+  height: 100%;
+  /* align-items: center; */
+  /* overflow: auto; */
+  /* padding: 0 20px; */
+}
+
+.loginSection {
+  background: #e2e8f0;
+  width: 100vw;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+
+.flexContainer {
+  display: flex;
+  /* flex: 1; */
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.flexContainer .box {
+  display: flex;
+  margin: 0 0 0.2rem 0;
+  z-index: 10;
+  width: 55%;
+}
+
+.loginForm {
+  color: #334155;
+  width: 75%;
+  margin: 0 auto;
+  text-align: left;
+}
+.loginForm h2 {
+  font-size: 1.75rem;
+  margin: 0 0 1.5rem 0;
+  border-bottom: 2px solid #334155;
+}
+.loginForm .formGroup {
+  margin: 1rem auto;
+}
+.loginForm .formGroup label {
+  font-size: 1.15rem;
+  display: block;
+  margin: 0 auto 0.7rem auto;
+  /* border-radius: 0.25rem; */
+}
+.loginForm .formGroup .userIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+.loginForm .formGroup .userIcon span {
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginForm .formGroup input {
+  display: block;
+  width: 100%;
+  padding: 0.55rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  border: 1px inset transparent;
+}
+.loginForm .formGroup input:focus {
+  outline: none;
+  border-color: #334155;
+  /* border: 1px #334155 solid; */
+}
+
+.btn {
+  color: #fff;
+  background: #334155;
+  padding: 0.75rem 1.25rem;
+  margin-top: 1.75rem;
+  border-radius: 0.25rem;
+  font-size: 1.15rem;
+  transition: background-color 200ms ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #475569;
+}
+.btn .arrowKey {
+  width: 2rem;
+  margin: 0 0 -0.2rem 0.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 95vw;
+  }
+
+  .loginSection {
+    height: calc(100vh - 60px);
+  }
+
+  .flexContainer .box {
+    flex: none;
+    margin: -1rem auto;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=login.module.css.map */

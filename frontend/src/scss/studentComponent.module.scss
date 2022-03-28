@@ -1,0 +1,83 @@
+.box {
+    flex: 1;
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // margin: -8rem 0rem 0rem 0;.
+    // margin: 0.25rem;
+    // margin-top: 0.25rem;
+    min-height: 50vh;
+    color:#334155;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+
+    .userDetails{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .classDetails{
+
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        flex-direction: column;
+        min-width: 99%;
+        overflow: auto;
+        height: 50vh;
+        &::-webkit-scrollbar {
+            width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey; 
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #999; 
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb:hover {
+            background: #334155; 
+        }
+        
+        .listHeading{
+            text-align: center;
+            margin: 0.5rem;
+        }
+        
+        .classList{
+            border-collapse: collapse;
+            width:100%;
+
+            thead tr {
+                background-color: #334155;
+                color: #fff;
+                text-align: left;
+            }
+
+            th, td {
+                padding: 0.5rem;
+            }
+
+            tbody tr {
+                border-bottom: 1px solid #334155;
+
+                &:nth-of-type(even){
+                    background-color: #44566e57;
+                    // color: #fff;
+                }    
+            }
+        }
+    }
+}
+
+.userIcon > svg {
+    size: 5rem;
+    width: 10rem;
+    height: 10rem;
+    color:#999;
+    margin-top: 2rem;
+    align-self: center;
+}
